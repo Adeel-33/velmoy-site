@@ -49,7 +49,8 @@ export default function FlowLine(props?: React.SVGProps<SVGSVGElement>) {
       viewBox="0 0 1128 2391"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="pointer-events-none absolute left-1/2 top-[200px] sm:top-[220px] md:top-[250px] -translate-x-1/2"
+      className="pointer-events-none absolute left-1/2 top-[150px] xs:top-[180px] sm:top-[200px] md:top-[220px] lg:top-[250px] -translate-x-1/2 w-[90vw] sm:w-[95vw] md:w-full max-w-[1128px] h-auto"
+      style={{ maxHeight: 'none' }}
       {...props}
     >
       <path

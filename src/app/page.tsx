@@ -17,16 +17,16 @@ export default function Home() {
     <div className="min-h-screen bg-[#021618] text-white">
       <header className="relative bg-gradient-to-b from-[#021c21] via-[#022629] to-[#021618]">
         {/* Union SVG as FlowLine Background */}
-        <div className="absolute left-1/2 top-[20px] md:top-[40px] -translate-x-1/2 z-0 pointer-events-none">
+        <div className="absolute left-1/2 top-[10px] sm:top-[20px] md:top-[40px] -translate-x-1/2 z-0 pointer-events-none">
           <img
             src="/Union.svg"
             alt="Union"
-            className="w-[600px] h-[300px] sm:w-[800px] sm:h-[400px] md:w-[1200px] md:h-[600px] lg:w-[2000px] lg:h-[1000px] opacity-30"
+            className="w-[300px] h-[150px] xs:w-[400px] xs:h-[200px] sm:w-[600px] sm:h-[300px] md:w-[800px] md:h-[400px] lg:w-[1200px] lg:h-[600px] xl:w-[2000px] xl:h-[1000px] opacity-30"
           />
         </div>
         <FlowLine />
 
-        <div className="relative mx-auto max-w-6xl px-5 pt-6 md:px-10 lg:px-6">
+        <div className="relative mx-auto max-w-6xl px-4 sm:px-5 pt-4 sm:pt-6 md:px-10 lg:px-6">
 
           {/* ================= NAV ================= */}
           <nav className="relative flex items-center justify-between py-3">
@@ -35,10 +35,10 @@ export default function Home() {
                 <Image
                   src="/velmoy-logo.png"
                   alt="VELMOY DEVELOPMENT"
-                  className="nav-logo-img"
-                  width={150}
-                  height={45}
+                  width={120}
+                  height={36}
                   priority
+                  className="w-24 sm:w-32 md:w-[150px] h-auto"
                 />
               </Link>
             </div>
@@ -86,14 +86,14 @@ export default function Home() {
           </nav>
 
           {/* ================= HERO CONTENT ================= */}
-          <div className="relative flex flex-col items-center py-12 sm:py-16 md:py-20 text-center">
-            <div className="relative z-10 max-w-3xl space-y-5 sm:space-y-7 px-4">
-              <h1 className="text-balance text-3xl sm:text-4xl font-semibold leading-tight tracking-tight md:text-5xl lg:text-6xl">
+          <div className="relative flex flex-col items-center py-8 sm:py-12 md:py-16 lg:py-20 text-center">
+            <div className="relative z-10 max-w-3xl space-y-4 sm:space-y-5 md:space-y-7 px-4 sm:px-6">
+              <h1 className="text-balance text-2xl xs:text-3xl sm:text-4xl font-semibold leading-tight tracking-tight md:text-5xl lg:text-6xl px-2">
                 Webseiten, die verkaufen, überzeugen und messbare Ergebnisse
                 liefern
               </h1>
 
-              <p className="mx-auto max-w-xl text-xs sm:text-sm leading-relaxed text-white/70 md:text-base">
+              <p className="mx-auto max-w-xl text-xs sm:text-sm leading-relaxed text-white/70 md:text-base px-2">
                 Design. Development. Growth. – Strategisch gestaltet, technisch
                 perfekt umgesetzt und auf Wachstum optimiert.
               </p>
@@ -123,8 +123,8 @@ export default function Home() {
           </div>
 
           {/* Our Partners Title */}
-          <div className="text-center mt-8">
-            <p className="text-sm uppercase tracking-[0.3em] text-white/40">
+          <div className="text-center mt-6 sm:mt-8">
+            <p className="text-xs sm:text-sm uppercase tracking-[0.3em] text-white/40 px-4">
               Our Partners
             </p>
           </div>
@@ -132,18 +132,18 @@ export default function Home() {
         </div>
 
         {/* ================= PARTNERS ================= */}
-        <div className="text-left py-3 sm:py-4 relative overflow-hidden w-full" style={{ minHeight: '80px', height: 'auto' }}>
+        <div className="text-left py-4 sm:py-5 md:py-6 relative overflow-hidden w-full" style={{ minHeight: 'auto', height: 'auto', paddingTop: '1rem', paddingBottom: '1rem' }}>
           {/* Blurred background with gradient overlay */}
           <div className="absolute inset-0 bg-[#202429] backdrop-blur-xl bg-opacity-10">
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#0fdac2]/10 to-transparent"></div>
           </div>
 
-          <div className="relative z-10 h-full flex flex-col justify-start max-w-7xl mx-auto px-4 sm:px-5 md:px-10 lg:px-6 pt-2 pb-2">
-            <div className="flex flex-wrap items-center justify-center gap-x-6 sm:gap-x-8 md:gap-x-12 gap-y-3 sm:gap-y-4">
+          <div className="relative z-10 h-full flex flex-col justify-center max-w-7xl mx-auto px-4 sm:px-5 md:px-10 lg:px-6 py-2">
+            <div className="flex flex-wrap items-center justify-center gap-x-4 sm:gap-x-6 md:gap-x-8 lg:gap-x-12 gap-y-4 sm:gap-y-5">
               {partners.map((partner, index) => (
                 <div
                   key={index}
-                  className="relative h-8 w-20 sm:h-10 sm:w-28 md:h-12 md:w-32 opacity-70 flex items-center justify-center"
+                  className="relative h-6 w-16 xs:h-8 xs:w-20 sm:h-10 sm:w-28 md:h-12 md:w-32 opacity-70 flex items-center justify-center"
                 >
                   <Image
                     src={partner.src}

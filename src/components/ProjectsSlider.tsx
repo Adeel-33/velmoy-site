@@ -21,8 +21,8 @@ export default function ProjectsSlider() {
     <section className="relative py-12 sm:py-16 md:py-20 lg:py-28 overflow-hidden">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
 
-        <div className="mb-8 sm:mb-12 md:mb-16 text-left">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#021618]">
+        <div className="mb-6 sm:mb-8 md:mb-12 lg:mb-16 text-left px-2 sm:px-0">
+          <h2 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl font-semibold text-[#021618]">
             Ausgewählte Projekte
           </h2>
           <p className="mt-2 max-w-xl text-xs sm:text-sm md:text-base text-[#021618]/60">
@@ -62,7 +62,7 @@ export default function ProjectsSlider() {
           {infiniteProjects.map((project, index) => (
             <SwiperSlide
               key={index}
-              className="!w-[280px] sm:!w-[320px] md:!w-[400px] lg:!w-[480px]"
+              className="!w-[240px] xs:!w-[280px] sm:!w-[320px] md:!w-[380px] lg:!w-[450px] xl:!w-[480px]"
             >
               <div className="project-3d">
                 <div className="relative aspect-[16/9] overflow-hidden rounded-2xl bg-black/30 group cursor-pointer">
