@@ -14,7 +14,8 @@ const partners = [
 ];
 const Partner=()=>{
     
-    const trackRef = useRef(null);
+    const trackRef = useRef<HTMLDivElement>(null);
+
 
     useEffect(() => {
       const track = trackRef.current;
@@ -31,7 +32,9 @@ const Partner=()=>{
        },
       });
 
-      return ()=> tween.kill()
+       return () => {
+        tween.kill(); // proper cleanup for GSAP
+       };
     }, []);
 
 
