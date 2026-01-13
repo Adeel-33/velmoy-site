@@ -5,7 +5,7 @@ import "./globals.css";
 import localFont from "next/font/local"
 
 export const Inter=localFont({
-    src:"../fonts/inter/static/inter_18pt-Regular.ttf",
+    src:"../fonts/inter/static/Inter_18pt-Regular.ttf",
     variable:"--font-inter"
 
 })
