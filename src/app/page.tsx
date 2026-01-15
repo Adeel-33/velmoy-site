@@ -66,7 +66,7 @@ export default function Home() {
     },
   ];
   return (
-    <div className="min-h-screen  text-white">
+    <div className="min-h-screen bg-white text-white">
       <header className="relative bg-gradient-to-b from-[#021c21] via-[#022629] to-[#021618]">
         {/* Union SVG as FlowLine Background */}
         <div className="absolute left-1/2 -top-[60px] xs:-top-[70px] sm:-top-[80px] md:-top-[60px] lg:-top-[40px] -translate-x-1/2 z-0 pointer-events-none">

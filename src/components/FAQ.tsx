@@ -65,7 +65,7 @@ const FAQ = () => {
       <div className="relative max-w-7xl   flex flex-col items-center gap-16 px-4 sm:px-8 ">
         <div className="flex-1 w-full flex flex-col items-center gap-16 md:gap-28">
           {/* vector image    */}
-
+          {/* 
           <div className="absolute z-0 inset-0 overflow-hidden ">
             <Image
               src={vector}
@@ -74,7 +74,7 @@ const FAQ = () => {
               className="object-cover object-center"
               priority
             />
-          </div>
+          </div> */}
 
           {/* heading and paragraph */}
           <div className="z-10 flex flex-col text-center gap-2 pt-16 md:pt-28">
