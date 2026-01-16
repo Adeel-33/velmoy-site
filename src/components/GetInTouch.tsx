@@ -31,7 +31,6 @@ const GetInTouch = () => {
     const animation = gsap.set(textRef.current, { scale: 1, rotate: 0 });
     gsap.to(textRef.current, {
       scale: 2.5,
-
       rotate: -35,
       scrollTrigger: {
         trigger: sectionRef.current,
@@ -90,7 +89,7 @@ const GetInTouch = () => {
 
         {/* contact form */}
 
-        <div className="bg-[#021F24] max-w-[1449px] min-h-[740px] grid grid-cols-1 md:grid-cols-2 md:gap-0 gap-12 px-4  py-20 place-items-center ">
+        <div className="bg-[#1F1F25] max-w-[1449px] min-h-[740px] grid grid-cols-1 md:grid-cols-2 md:gap-0 gap-12 px-4  py-20 place-items-center ">
           {/* left side */}
           <div className="col-span-1 flex flex-col gap-12  ">
             {/* heading */}

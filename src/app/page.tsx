@@ -280,9 +280,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section>
+      {/* <section>
         <CaseStudiesSection />
-      </section>
+      </section> */}
 
       <section>
         <section className="bg-gray-50">

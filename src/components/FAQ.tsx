@@ -62,144 +62,147 @@ const FAQ = () => {
   };
   return (
     <>
-      <div className="relative max-w-7xl   flex flex-col items-center gap-16 px-4 sm:px-8 ">
-        <div className="flex-1 w-full flex flex-col items-center gap-16 md:gap-28">
-          {/* vector image    */}
-          {/* 
-          <div className="absolute z-0 inset-0 overflow-hidden ">
+      <div className="relative w-full ">
+        {/* Background vector */}
+        <div className="absolute inset-0 z-0 overflow-hidden ">
+          <div className="relative w-full sm:h-0 md:h-full md:px-10">
             <Image
               src={vector}
-              alt="vector image"
+              alt="vector background"
               fill
-              className="object-cover object-center"
-              priority
+              className="object-fill  w-full h-full md:scale-y-155  lg:scale-y-115 lg:scale-y-100"
             />
-          </div> */}
-
-          {/* heading and paragraph */}
-          <div className="z-10 flex flex-col text-center gap-2 pt-16 md:pt-28">
-            <h1
-              className={`${Satoshi.className} font-bold text-[32px] md:text-[42px] text-white`}
-            >
-              Häufig gestellte Fragen
-            </h1>
-            <p
-              className={`${Inter.className} font-normal text-[16px] text-[#FBFBFB]`}
-            >
-              Finde schnelle Antworten auf die am häufigsten gestellten Fragen.
-            </p>
-          </div>
-
-          {/* questions */}
-          <div className="z-10 grid grid-cols-1 md:grid-cols-2 gap-4 max-w-7xl  mx-auto">
-            {/* left side */}
-            <div className="col-span-1 max-w-[499px] md:min-h-[737px] flex flex-col md:justify-between gap-2">
-              {questions.slice(0, 3).map((question) => {
-                const isOpen = openQuestionId === question.id;
-                return (
-                  <div
-                    key={question.id}
-                    className="flex gap-4 px-2 py-6 lg:p-6 max-w-[499px] rounded-[20px] bg-[#1F1F25] min-h-[122px] max-h-full"
-                  >
-                    {/* plus and negative  circle image */}
-                    <div
-                      onClick={() => {
-                        toggleQuestion(question.id);
-                      }}
-                      className="shrink-0 flex items-start w-9 mt-1"
-                    >
-                      <Image
-                        src={!isOpen ? plusCricle : negativeCricle}
-                        alt="plus-circle"
-                        width={36}
-                        height={36}
-                        className={`transform transition-transform duration-1000 ${
-                          isOpen ? "rotate-180" : "rotate-0 "
-                        }`}
-                      />
-                    </div>
-                    {/* question and answer */}
-                    <div className="flex flex-col gap-4">
-                      <h1
-                        className={`${Satoshi.className} font-medium text-white text-[16px] lg:text-[20px]`}
-                      >
-                        {question.question}
-                      </h1>
-
-                      <div
-                        className={`overflow-hidden transition-all duration-1000 ${
-                          isOpen
-                            ? "max-h-96 opacity-100 mt-2"
-                            : "max-h-0 opacity-0 mt-0"
-                        }`}
-                      >
-                        <p
-                          className={`${Inter.className} font-normal text-[14px] lg:text-[16px] text-[#FBFBFB]`}
-                        >
-                          {question.answer}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-
-            {/* right side */}
-            <div className="col-span-1 max-w-[499px] md:min-h-[737px] flex flex-col md:justify-evenly gap-2">
-              {questions.slice(3, 5).map((question) => {
-                const isOpen = openQuestionId === question.id;
-                return (
-                  <div
-                    key={question.id}
-                    className="flex gap-4 px-2 py-6 lg:p-6 w-ful max-w-[499px] rounded-[20px] bg-[#1F1F25] min-h-[122px] max-h-full"
-                  >
-                    {/* plus and negative  circle image */}
-                    <div
-                      onClick={() => {
-                        toggleQuestion(question.id);
-                      }}
-                      className="shrink-0 flex items-start w-9 mt-1"
-                    >
-                      <Image
-                        src={!isOpen ? plusCricle : negativeCricle}
-                        alt="plus-circle"
-                        width={36}
-                        height={36}
-                        className={`transform transition-transform duration-1000 ${
-                          isOpen ? "rotate-180 " : " rotate-0"
-                        }`}
-                      />
-                    </div>
-                    {/* question and answer */}
-                    <div className="flex flex-col gap-4">
-                      <h1
-                        className={`${Satoshi.className} font-medium text-white text-[16px] lg:text-[20px]`}
-                      >
-                        {question.question}
-                      </h1>
-                      <div
-                        className={`overflow-hidden transition-all duration-1000 ${
-                          isOpen
-                            ? "max-h-96 opacity-100 mt-2"
-                            : "max-h-0 opacity-0 mt-0"
-                        }`}
-                      >
-                        <p
-                          className={`${Inter.className} font-normal text-[14px] lg:text-[16px] text-[#FBFBFB]`}
-                        >
-                          {question.answer}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
           </div>
         </div>
-        <div className="z-10 ">
-          <Footer />
+
+        <div className="relative max-w-7xl   flex flex-col items-center gap-16 px-4 sm:px-8 ">
+          <div className="flex-1 w-full flex flex-col items-center gap-16 md:gap-28">
+            {/* heading and paragraph */}
+            <div className="z-10 flex flex-col text-center gap-2 pt-16 md:pt-28">
+              <h1
+                className={`${Satoshi.className} font-bold text-[32px] md:text-[42px] text-white`}
+              >
+                Häufig gestellte Fragen
+              </h1>
+              <p
+                className={`${Inter.className} font-normal text-[16px] text-[#FBFBFB]`}
+              >
+                Finde schnelle Antworten auf die am häufigsten gestellten
+                Fragen.
+              </p>
+            </div>
+
+            {/* questions */}
+            <div className="z-10 grid grid-cols-1 md:grid-cols-2 gap-4 max-w-7xl  mx-auto">
+              {/* left side */}
+              <div className="col-span-1 max-w-[499px] md:min-h-[737px] flex flex-col md:justify-between gap-2">
+                {questions.slice(0, 3).map((question) => {
+                  const isOpen = openQuestionId === question.id;
+                  return (
+                    <div
+                      key={question.id}
+                      className="flex gap-4 px-2 py-6 lg:p-6 max-w-[499px] rounded-[20px] bg-[#1F1F25] min-h-[122px] max-h-full"
+                    >
+                      {/* plus and negative  circle image */}
+                      <div
+                        onClick={() => {
+                          toggleQuestion(question.id);
+                        }}
+                        className="shrink-0 flex items-start w-9 mt-1"
+                      >
+                        <Image
+                          src={!isOpen ? plusCricle : negativeCricle}
+                          alt="plus-circle"
+                          width={36}
+                          height={36}
+                          className={`transform transition-transform duration-1000 ${
+                            isOpen ? "rotate-180" : "rotate-0 "
+                          }`}
+                        />
+                      </div>
+                      {/* question and answer */}
+                      <div className="flex flex-col gap-4">
+                        <h1
+                          className={`${Satoshi.className} font-medium text-white text-[16px] lg:text-[20px]`}
+                        >
+                          {question.question}
+                        </h1>
+
+                        <div
+                          className={`overflow-hidden transition-all duration-1000 ${
+                            isOpen
+                              ? "max-h-96 opacity-100 mt-2"
+                              : "max-h-0 opacity-0 mt-0"
+                          }`}
+                        >
+                          <p
+                            className={`${Inter.className} font-normal text-[14px] lg:text-[16px] text-[#FBFBFB]`}
+                          >
+                            {question.answer}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+
+              {/* right side */}
+              <div className="col-span-1 max-w-[499px] md:min-h-[737px] flex flex-col md:justify-evenly gap-2">
+                {questions.slice(3, 5).map((question) => {
+                  const isOpen = openQuestionId === question.id;
+                  return (
+                    <div
+                      key={question.id}
+                      className="flex gap-4 px-2 py-6 lg:p-6 w-ful max-w-[499px] rounded-[20px] bg-[#1F1F25] min-h-[122px] max-h-full"
+                    >
+                      {/* plus and negative  circle image */}
+                      <div
+                        onClick={() => {
+                          toggleQuestion(question.id);
+                        }}
+                        className="shrink-0 flex items-start w-9 mt-1"
+                      >
+                        <Image
+                          src={!isOpen ? plusCricle : negativeCricle}
+                          alt="plus-circle"
+                          width={36}
+                          height={36}
+                          className={`transform transition-transform duration-1000 ${
+                            isOpen ? "rotate-180 " : " rotate-0"
+                          }`}
+                        />
+                      </div>
+                      {/* question and answer */}
+                      <div className="flex flex-col gap-4">
+                        <h1
+                          className={`${Satoshi.className} font-medium text-white text-[16px] lg:text-[20px]`}
+                        >
+                          {question.question}
+                        </h1>
+                        <div
+                          className={`overflow-hidden transition-all duration-1000 ${
+                            isOpen
+                              ? "max-h-96 opacity-100 mt-2"
+                              : "max-h-0 opacity-0 mt-0"
+                          }`}
+                        >
+                          <p
+                            className={`${Inter.className} font-normal text-[14px] lg:text-[16px] text-[#FBFBFB]`}
+                          >
+                            {question.answer}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+          <div className="z-10 ">
+            <Footer />
+          </div>
         </div>
       </div>
     </>
