@@ -73,7 +73,7 @@ const Footer = () => {
   ];
   return (
     <>
-      <div className=" mb-4 w-[calc(100vw-12px)] md:w-[calc(100vw-24px)] lg:w-[calc(100vw-32px)] min-h-[254px] rounded-[40px] bg-[#F8F8FA] flex flex-col gap-12 md:gap-0  justify-around px-4 md:px-8 lg:px-16 py-4 md:py-0 ">
+      <div className=" mb-4 w-full min-h-[254px] rounded-[40px] bg-[#F8F8FA] flex flex-col gap-12 md:gap-0  justify-around px-4 md:px-8 lg:px-16 py-4 md:py-0 ">
         {/* logo and nav links */}
         <div className="w-full flex flex-col-reverse md:flex-row  justify-between items-center gap-12 md:gap-0">
           {/* logo */}

@@ -72,11 +72,11 @@ const GetInTouch = () => {
 
   return (
     <>
-      <div className="">
+      <div className="bg-[#1F1F25] w-full">
         {/* Animated text */}
         <div
           ref={sectionRef}
-          className="bg-[#1F1F25] max-w-[1449px] h-full min-h-[540px] sm:min-h-[740px] flex items-center    justify-center overflow-hidden "
+          className=" max-w-[1449px]  min-h-[540px] sm:min-h-[740px] flex items-center    justify-center overflow-hidden mx-auto"
         >
           <h1
             ref={textRef}
@@ -89,7 +89,7 @@ const GetInTouch = () => {
 
         {/* contact form */}
 
-        <div className="bg-[#1F1F25] max-w-[1449px] min-h-[740px] grid grid-cols-1 md:grid-cols-2 md:gap-0 gap-12 px-4  py-20 place-items-center ">
+        <div className=" max-w-[1449px] min-h-[740px] grid grid-cols-1 md:grid-cols-2 md:gap-0 gap-12 px-4  py-20 place-items-center mx-auto">
           {/* left side */}
           <div className="col-span-1 flex flex-col gap-12  ">
             {/* heading */}
