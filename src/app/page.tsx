@@ -20,6 +20,7 @@ import GetInTouch from "@/components/GetInTouch";
 import Collaboration from "@/components/Collaboration";
 import Cards from "@/components/Card";
 import Footer from "@/components/Footer";
+import ImageSection from "@/components/ImageSection";
 
 export default function Home() {
   const values = [
@@ -281,9 +282,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* <section>
+      <section>
+        <ImageSection />
+      </section>
+      <section>
         <CaseStudiesSection />
-      </section> */}
+      </section>
 
       <section>
         <section className="bg-gray-50">
