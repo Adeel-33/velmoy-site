@@ -39,7 +39,8 @@ export default function ProjectsSlider() {
           <p
             className={`${Inter.className} mt-2 max-w-[657px] text-[10px] xs:text-xs sm:text-sm md:text-base text-[#4E4E4E] leading-relaxed`}
           >
-            Websites, die Marken definieren, Vertrauen aufbauen und messbare Ergebnisse liefern.
+            Websites, die Marken definieren, Vertrauen aufbauen und messbare
+            Ergebnisse liefern.
           </p>
         </div>
 
@@ -48,7 +49,6 @@ export default function ProjectsSlider() {
           slidesPerView="auto"
           centeredSlides={true}
           loop={true}
-          spaceBetween={40}
           speed={800} // transition speed
           autoplay={{
             delay: 2000, // time before moving to next slide
@@ -85,10 +85,3 @@ export default function ProjectsSlider() {
     </section>
   );
 }
-
-
-
-
-
-
-

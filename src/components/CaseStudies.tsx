@@ -154,7 +154,7 @@ const CaseStudies = () => {
       pepsiCardRef.current,
       {
         rotateY: 180,
-        duration: 2000,
+        duration: 2,
       },
       0,
     );
