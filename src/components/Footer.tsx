@@ -47,7 +47,7 @@ const Footer = () => {
     {
       id: 6,
       title: "Über uns",
-      href: "#unberUns",
+      href: "#uberUns",
     },
     {
       id: 7,

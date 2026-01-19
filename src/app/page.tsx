@@ -289,10 +289,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section>
+      <section id="kundenstimmen">
         <ImageSection />
       </section>
-      <section id="kundenstimmen">
+      <section>
         <CaseStudiesSection />
       </section>
 
@@ -301,7 +301,7 @@ export default function Home() {
           <Collaboration />
         </section>
 
-        <section>
+        <section id="#uberUns">
           <Cards />
         </section>
       </section>

@@ -163,7 +163,7 @@ const CaseStudies = () => {
     <>
       <div className="w-full ">
         {/* bg Image */}
-        <div className="w-full h-[150px] md:h-[250px] ">
+        <div className="w-full h-[80px] sm:h-[150px] md:h-[250px]  2xl:h-[380px] ">
           <Image src={curved} alt="triangle" className="block" />
         </div>
 
@@ -351,7 +351,7 @@ const CaseStudies = () => {
                   </div>
 
                   {/* Card 2 Front */}
-                  <div className="absolute z-40 top-20 -right-6 h-[77px] w-[201px] md:top-42 md:-right-65 md:w-[307px] md:h-[107px] bg-white rounded-[12px] flex flex-col justify-center px-8 shadow-xl">
+                  <div className="absolute z-40 top-20 -right-6 h-[77px] w-[201px] md:top-42 md:-right-56 lg:top-42 lg:-right-65 md:w-[307px] md:h-[107px] bg-white rounded-[12px] flex flex-col justify-center px-8 shadow-xl">
                     <Image src={stars} alt="stars" />
                     <p
                       className={`${Inter.className} font-normal text-[12px] text-[#4E4E4E]`}
@@ -396,7 +396,7 @@ const CaseStudies = () => {
                   </div>
 
                   {/* Card 2 Front */}
-                  <div className="absolute z-40 top-20 -right-6 h-[77px] w-[201px] md:top-42 md:-right-65 md:w-[307px] md:h-[107px] bg-white rounded-[12px] flex flex-col justify-center px-8 shadow-xl">
+                  <div className="absolute z-40 top-20 -right-6 h-[77px] w-[201px] md:top-42 md:-right-52 lg:top-42 lg:-right-65 md:w-[307px] md:h-[107px] bg-white rounded-[12px] flex flex-col justify-center px-8 shadow-xl">
                     <Image src={stars} alt="stars" />
                     <p
                       className={`${Inter.className} font-normal text-[12px] text-[#4E4E4E]`}
@@ -426,100 +426,3 @@ const CaseStudies = () => {
   );
 };
 export default CaseStudies;
-
-{
-  /* Central Pepsi Card */
-}
-// <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-//   <div ref={pepsiCardRef}>
-//     {/* Pepsi Card */}
-//     <div className="">
-//       {/* bg white */}
-//       <div className="w-[300px] h-[381px] md:w-[384px] md:h-[488px] rounded-[30px] bg-[#F8F8FA] flex items-center justify-center">
-//         {/* content */}
-//         <div className="w-[92%] h-[92%] rounded-[24px] bg-[#28458E] flex items-center justify-center">
-//           <Image src={pepsi} alt="pepsi image" />
-//         </div>
-//       </div>
-//       {/* floating cards */}
-//       {/* Card 1 Front */}
-//       <div className="absolute z-40 top-4 -left-6 w-[148px] h-[64px] md:top-20 md:-left-40 md:w-[204px] md:h-[87px] bg-white rounded-[12px] flex flex-col justify-center px-8 shadow-xl">
-//         <h1
-//           className={`${Satoshi.className} font-bold text-[16px] text-[#000D0D]`}
-//         >
-//           PepsiCo
-//         </h1>
-//         <p
-//           className={`${Inter.className} font-normal text-[12px] text-[#4E4E4E]`}
-//         >
-//           Deutschland GmbH
-//         </p>
-//       </div>
-
-//       {/* Card 2 Front */}
-//       <div className="absolute z-40 top-20 -right-6 h-[77px] w-[201px] md:top-42 md:-right-65 md:w-[307px] md:h-[107px] bg-white rounded-[12px] flex flex-col justify-center px-8 shadow-xl">
-//         <Image src={stars} alt="stars" />
-//         <p
-//           className={`${Inter.className} font-normal text-[12px] text-[#4E4E4E]`}
-//         >
-//           Velmoy hat uns noch nie enttäuscht.
-//         </p>
-//       </div>
-
-//       {/* Card 3 Front */}
-//       <div className="absolute z-40 -bottom-10 -left-6 md:-bottom-16 md:-left-44 w-[302px] h-[120px] md:w-[399px] md:h-[198px] bg-white rounded-[12px] flex flex-col p-4 md:py-8 md:px-16 shadow-xl">
-//         <p
-//           className={`${Inter.className} font-normal text-[12px] text-[#4E4E4E]`}
-//         >
-//           "Extrem moderne, hervorragend gestaltete Websites, die
-//           Marken hervorheben und Conversions steigern."
-//         </p>
-//       </div>
-//     </div>
-
-//     {/* User Image */}
-//     <div className="">
-//       {/* bg white */}
-//       <div className="w-[300px] h-[381px] md:w-[384px] md:h-[488px] rounded-[30px] bg-[#F8F8FA] flex items-center justify-center">
-//         {/* content */}
-//         <div className="w-[92%] h-[92%]">
-//           <Image src={user2} alt="user image" />
-//         </div>
-//       </div>
-//       {/* floating cards */}
-//       {/* Card 1 Front */}
-//       <div className="absolute z-40 top-4 -left-6 w-[148px] h-[64px] md:top-20 md:-left-40 md:w-[204px] md:h-[87px] bg-white rounded-[12px] flex flex-col justify-center px-8 shadow-xl">
-//         <h1
-//           className={`${Satoshi.className} font-bold text-[16px] text-[#000D0D]`}
-//         >
-//           PepsiCo
-//         </h1>
-//         <p
-//           className={`${Inter.className} font-normal text-[12px] text-[#4E4E4E]`}
-//         >
-//           Deutschland GmbH
-//         </p>
-//       </div>
-
-//       {/* Card 2 Front */}
-//       <div className="absolute z-40 top-20 -right-6 h-[77px] w-[201px] md:top-42 md:-right-65 md:w-[307px] md:h-[107px] bg-white rounded-[12px] flex flex-col justify-center px-8 shadow-xl">
-//         <Image src={stars} alt="stars" />
-//         <p
-//           className={`${Inter.className} font-normal text-[12px] text-[#4E4E4E]`}
-//         >
-//           Velmoy hat uns noch nie enttäuscht.
-//         </p>
-//       </div>
-
-//       {/* Card 3 Front */}
-//       <div className="absolute z-40 -bottom-10 -left-6 md:-bottom-16 md:-left-44 w-[302px] h-[120px] md:w-[399px] md:h-[198px] bg-white rounded-[12px] flex flex-col p-4 md:py-8 md:px-16 shadow-xl">
-//         <p
-//           className={`${Inter.className} font-normal text-[12px] text-[#4E4E4E]`}
-//         >
-//           "Extrem moderne, hervorragend gestaltete Websites, die
-//           Marken hervorheben und Conversions steigern."
-//         </p>
-//       </div>
-//     </div>
-//   </div>
-// </div>
