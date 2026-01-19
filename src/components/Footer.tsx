@@ -9,7 +9,7 @@ export const Satoshi = localFont({
   src: "../fonts/satoshi/fonts/Satoshi-Regular.woff2",
   variable: "--font-satoshi",
 });
-
+import Link from "next/link";
 import Image from "next/image";
 import velmoyLogo from "../../public/footer/velmoyLogo.svg";
 import fb from "../../public/footer/fb.svg";
@@ -22,30 +22,37 @@ const Footer = () => {
     {
       id: 1,
       title: "Home",
+      href: "#hero",
     },
     {
       id: 2,
       title: "Projekte",
+      href: "#project",
     },
     {
       id: 3,
       title: "Leistungen",
+      href: "#leistungen",
     },
     {
       id: 4,
       title: "Kundenstimmen",
+      href: "#kundenstimmen",
     },
     {
       id: 5,
       title: "Partner",
+      href: "#partner",
     },
     {
       id: 6,
       title: "Über uns",
+      href: "#unberUns",
     },
     {
       id: 7,
       title: "FAQ",
+      href: "#faq",
     },
   ];
   const socialLinks = [
@@ -73,7 +80,7 @@ const Footer = () => {
   ];
   return (
     <>
-      <div className=" mb-4 w-full min-h-[254px] rounded-[40px] bg-[#F8F8FA] flex flex-col gap-12 md:gap-0  justify-around px-4 md:px-8 lg:px-16 py-4 md:py-0 ">
+      <div className=" mb-4 mt-16 w-full min-h-[254px] rounded-[40px] bg-[#F8F8FA] flex flex-col gap-12 md:gap-0  justify-around px-4 md:px-8 lg:px-16 py-4 md:py-0 ">
         {/* logo and nav links */}
         <div className="w-full flex flex-col-reverse md:flex-row  justify-between items-center gap-12 md:gap-0">
           {/* logo */}
@@ -89,12 +96,13 @@ const Footer = () => {
           {/* nav links */}
           <div className="flex flex-col md:flex-row items-center justify-center  gap-4">
             {navLinks.map((link) => (
-              <h1
+              <Link
+                href={link.href}
                 key={link.id}
-                className={`${Inter.className} font-normal text-[16px] text-[#000D0D] `}
+                className={`${Inter.className} font-normal text-[16px] text-[#000D0D]`}
               >
                 {link.title}
-              </h1>
+              </Link>
             ))}
           </div>
         </div>

@@ -34,8 +34,8 @@ const GetInTouch = () => {
       rotate: -35,
       scrollTrigger: {
         trigger: sectionRef.current,
-        start: "center center",
-        end: "bottom center",
+        start: "top top",
+        end: "+=500",
         scrub: 2,
         pin: true,
       },

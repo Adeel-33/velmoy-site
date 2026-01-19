@@ -32,10 +32,10 @@ const ImageSection = () => {
     <>
       <div
         ref={containerRef}
-        className="w-full flex items-center justify-center h-screen"
+        className="w-full flex items-center justify-center h-72 md:h-96 z-70"
       >
-        <div ref={imageRef} className="w-[577px] h-[324px]">
-          <Image src={BigImage1} alt="big image" />
+        <div ref={imageRef} className="w-[40%] h-[40%] ">
+          <Image src={BigImage2} alt="big image" />
         </div>
       </div>
     </>

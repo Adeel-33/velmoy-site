@@ -86,7 +86,7 @@ const Cards: React.FC = () => {
     });
   }, []);
   return (
-    <div className="bg-white w-full  pt-24 ">
+    <div className="bg-white w-full   ">
       <div className="flex flex-col  min-h-screen w-full  px-4 items-center justify-center overflow-hidden mx-auto">
         {/* heading and paragraph */}
 

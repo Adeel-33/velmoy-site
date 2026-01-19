@@ -100,20 +100,24 @@ export default function Home() {
             </div>
 
             <div
-              className={`hidden items-center gap-8 text-sm text-[#FFFFFF] md:flex relative z-10 ${Inter.className}`}
+              className={`hidden items-center gap-4 lg:gap-8 text-[14px] font-medium md:text-[10px] md:font-normal lg:text-[14px] lg:font-medium text-[#FFFFFF] md:flex relative z-10 ${Inter.className}`}
             >
               {[
-                "Home",
-                "Projekte",
-                "Leistungen",
-                "Kundenstimmen",
-                "Partner",
-                "Über uns",
-                "FAQ",
+                { name: "Home", href: "#hero" },
+                { name: "Projekte", href: "#project" },
+                { name: "Leistungen", href: "#leistungen" },
+                { name: "Kundenstimmen", href: "#kundenstimmen" },
+                { name: "Partner", href: "#partner" },
+                { name: "Über uns", href: "#uberUns" },
+                { name: "FAQ", href: "#faq" },
               ].map((item) => (
-                <button key={item} className="transition hover:text-white">
-                  {item}
-                </button>
+                <Link
+                  href={item.href}
+                  key={item.name}
+                  className="transition hover:text-white"
+                >
+                  {item.name}
+                </Link>
               ))}
             </div>
 
@@ -143,7 +147,7 @@ export default function Home() {
           </nav>
 
           {/* ================= HERO CONTENT ================= */}
-          <div className="relative flex flex-col items-center py-6 sm:py-8 md:py-12 lg:py-16 xl:py-20 text-center">
+          <div className="hero relative flex flex-col items-center py-6 sm:py-8 md:py-12 lg:py-16 xl:py-20 text-center">
             <div className="relative z-10 max-w-3xl space-y-3 sm:space-y-4 md:space-y-5 lg:space-y-7 px-3 sm:px-4 md:px-6">
               <h1
                 className={`text-2xl xs:text-3xl sm:text-4xl font-semibold leading-tight tracking-tight md:text-5xl lg:text-6xl px-2 ${Satoshi.className}`}
@@ -207,13 +211,16 @@ export default function Home() {
       </header>
 
       {/* ================= PROJECTS SECTION WITH WHITE BACKGROUND ================= */}
-      <section className="bg-white">
+      <section id="project" className="bg-white">
         <ProjectsSlider />
       </section>
 
       {/* OUR VALUE   */}
 
-      <section className=" bg-[#F8F8FA] grid grid-cols-1 md:grid-cols-2 place-items-center  max-w-[1406px] min-h-[716px]  rounded-[40px] px-4 py-12  md:py-0 sm:px-8 gap-8 mx-auto">
+      <section
+        id="leistungen"
+        className=" bg-[#F8F8FA] grid grid-cols-1 md:grid-cols-2 place-items-center  max-w-[1406px] min-h-[716px]  rounded-[40px] px-4 py-12  md:py-0 sm:px-8 gap-8 mx-auto"
+      >
         {/* left side */}
         <div className=" col-span-1 max-w-[407px] min-h-[326px]  flex flex-col gap-4 md:gap-2">
           <h1
@@ -285,12 +292,12 @@ export default function Home() {
       <section>
         <ImageSection />
       </section>
-      <section>
+      <section id="kundenstimmen">
         <CaseStudiesSection />
       </section>
 
       <section>
-        <section className="bg-gray-50">
+        <section id="partner" className="bg-gray-50">
           <Collaboration />
         </section>
 
@@ -306,7 +313,7 @@ export default function Home() {
       </section>
 
       {/* FAQs */}
-      <section className="bg-[#26262D] px-4 sm:px-8 py-4 w-full">
+      <section id="faq" className="bg-[#26262D] px-4 sm:px-8 py-4 w-full">
         <FAQ />
         <Footer />
       </section>

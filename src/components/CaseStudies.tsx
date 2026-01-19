@@ -19,7 +19,8 @@ import { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import user2 from "../../public/caseStudies/user2.svg";
-import back from "../../public/caseStudies/back.png";
+
+import curved from "../../public/caseStudies/curved.svg";
 
 gsap.registerPlugin(ScrollTrigger);
 const CaseStudies = () => {
@@ -162,8 +163,8 @@ const CaseStudies = () => {
     <>
       <div className="w-full ">
         {/* bg Image */}
-        <div className="w-full h-[250px]">
-          <Image src={back} alt="triangle" />
+        <div className="w-full h-[150px] md:h-[250px] ">
+          <Image src={curved} alt="triangle" className="block" />
         </div>
 
         <div ref={containerRef} className="bg-[#1F1F25] w-full relative">
