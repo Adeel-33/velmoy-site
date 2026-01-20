@@ -23,6 +23,7 @@ import Footer from "@/components/Footer";
 import ImageSection from "@/components/ImageSection";
 
 export default function Home() {
+  const activeSection = "hero";
   const values = [
     {
       id: 1,
@@ -69,7 +70,10 @@ export default function Home() {
   ];
   return (
     <div className="min-h-screen w-full bg-white text-white">
-      <header className="relative bg-gradient-to-b from-[#021c21] via-[#022629] to-[#021618]">
+      <header
+        id="hero"
+        className="relative bg-gradient-to-b from-[#021c21] via-[#022629] to-[#021618]"
+      >
         {/* Union SVG as FlowLine Background */}
         <div className="absolute left-1/2 -top-[60px] xs:-top-[70px] sm:-top-[80px] md:-top-[60px] lg:-top-[40px] -translate-x-1/2 z-0 pointer-events-none">
           <img
@@ -114,7 +118,7 @@ export default function Home() {
                 <Link
                   href={item.href}
                   key={item.name}
-                  className="transition hover:text-white"
+                  className={` transition ${activeSection === item.href.replace("#", "") ? "text-[#2AFFDF]" : "text-white"} hover:text-[#2AFFDF]`}
                 >
                   {item.name}
                 </Link>
@@ -301,7 +305,7 @@ export default function Home() {
           <Collaboration />
         </section>
 
-        <section id="#uberUns">
+        <section id="uberUns">
           <Cards />
         </section>
       </section>

@@ -78,6 +78,7 @@ const Footer = () => {
       heigth: 16,
     },
   ];
+  const activeSection = "hero";
   return (
     <>
       <div className=" mb-4 mt-16 w-full min-h-[254px] rounded-[40px] bg-[#F8F8FA] flex flex-col gap-12 md:gap-0  justify-around px-4 md:px-8 lg:px-16 py-4 md:py-0 ">
@@ -99,7 +100,7 @@ const Footer = () => {
               <Link
                 href={link.href}
                 key={link.id}
-                className={`${Inter.className} font-normal text-[16px] text-[#000D0D]`}
+                className={`${Inter.className} ${activeSection === link.href.replace("#", "") ? "text-[#199986]" : "text-[#000D0D]"} font-normal text-[16px]  hover:text-[#199986]`}
               >
                 {link.title}
               </Link>
